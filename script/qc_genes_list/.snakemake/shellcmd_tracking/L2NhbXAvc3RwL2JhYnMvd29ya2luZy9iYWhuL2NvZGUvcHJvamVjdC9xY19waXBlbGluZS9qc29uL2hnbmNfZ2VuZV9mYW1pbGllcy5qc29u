@@ -1,3 +1,0 @@
-
-		wget -O /camp/stp/babs/working/bahn/code/project/qc_pipeline/json/hgnc_gene_families.json https://www.genenames.org/cgi-bin/genefamilies/download-all/json
-		
