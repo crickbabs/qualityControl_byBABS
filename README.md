@@ -28,5 +28,5 @@ For example:
 ## Running the pipeline
 	
 	$ module load nextflow/0.30.0
-	$ nextflow run -params-file params.yml -timeline main.nf
+	$ nextflow run -params-file params.yml main.nf -with-timeline
 
