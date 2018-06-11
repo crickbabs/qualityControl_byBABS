@@ -1,4 +1,4 @@
 species: "Homo sapiens"
 strandedness: "none"
-directory: "/camp/stp/babs/working/bahn/code/nf/qc_pipeline/fastq/paired_end"
+#directory: "/camp/stp/babs/working/bahn/code/nf/qc_pipeline/fastq/paired_end"
 #directory: "/camp/stp/sequencing/inputs/instruments/fastq/180411_K00102_0198_AHTW25BBXX/fastq_long/RN18033"

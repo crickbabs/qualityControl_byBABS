@@ -8,8 +8,8 @@
 ## Compiling two required binaries
 	
 	$ cd script/cpp
-	$ sh qc_directionality.sh
-	$ sh transcript_directionality.sh
+	$ sh qc_directionality.sh compil
+	$ sh transcript_directionality.sh compil
 	$ cd -
 
 ## Installing the custom MultiQC module
@@ -21,10 +21,12 @@
 
 ## Configuring the pipeline
 
-	$ vim params.yml
+For example:
+
+	$ echo "directory: $(realpath fastq/paired_end/)" >> params.yml
 
 ## Running the pipeline
 	
 	$ module load nextflow/0.30.0
-	$ nextflow run -params-file params.yml main.nf
+	$ nextflow run -params-file params.yml -timeline main.nf
 
