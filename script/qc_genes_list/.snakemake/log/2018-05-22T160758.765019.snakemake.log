@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	human_globin_bed
+	2
+
+rule human_globin_bed:
+    input: /camp/stp/babs/working/bahn/code/project/qc_pipeline/txt/human_globin_ids.txt
+    output: /camp/stp/babs/working/bahn/code/project/qc_pipeline/bed/human_globin.bed
+    jobid: 2
+
+Error in rule human_globin_bed:
+    jobid: 2
+    output: /camp/stp/babs/working/bahn/code/project/qc_pipeline/bed/human_globin.bed
+
+RuleException:
+NameError in line 130 of /camp/stp/babs/working/bahn/code/project/qc_pipeline/sak/qc_pipeline.sak:
+The name 'ids' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/camp/stp/babs/working/bahn/code/project/qc_pipeline/sak/qc_pipeline.sak", line 130, in __rule_human_globin_bed
+  File "/home/camp/bahn/.conda/envs/cotidianus/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /camp/stp/babs/working/bahn/code/project/qc_pipeline/.snakemake/log/2018-05-22T160758.765019.snakemake.log

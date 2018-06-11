@@ -1,0 +1,6 @@
+
+		wget -O /tmp/hgnc.json https://www.genenames.org/cgi-bin/genefamilies/download-all/json
+		iconv -f utf-8 -t iso-8859-15 /tmp/hgnc.json > /camp/stp/babs/working/bahn/code/project/qc_pipeline/json/hgnc_gene_families.json
+		wget -O /tmp/hgnc.tsv https://www.genenames.org/cgi-bin/genefamilies/download-all/json
+		iconv -f utf-8 -t iso-8859-15 /tmp/hgnc.tsv > /camp/stp/babs/working/bahn/code/project/qc_pipeline/tsv/hgnc_gene_families.tsv
+		

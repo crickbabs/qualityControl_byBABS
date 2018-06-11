@@ -1,0 +1,7 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Job counts:
+	count	jobs
+	1	get_globin_transcript_ids
+	1
+Complete log: /camp/stp/babs/working/bahn/code/project/qc_pipeline/.snakemake/log/2018-05-22T151948.394289.snakemake.log

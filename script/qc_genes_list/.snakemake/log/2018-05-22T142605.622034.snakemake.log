@@ -1,0 +1,18 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Job counts:
+	count	jobs
+	1	get_globin_transcript_ids
+	1
+Error in rule get_globin_transcript_ids:
+    jobid: 0
+    output: /camp/stp/babs/working/bahn/code/project/qc_pipeline/txt/globin_ids.txt
+
+RuleException:
+NameError in line 66 of /camp/stp/babs/working/bahn/code/project/qc_pipeline/sak/qc_pipeline.sak:
+name 'pprint' is not defined
+  File "/camp/stp/babs/working/bahn/code/project/qc_pipeline/sak/qc_pipeline.sak", line 66, in __rule_get_globin_transcript_ids
+  File "/home/camp/bahn/.conda/envs/cotidianus/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /camp/stp/babs/working/bahn/code/project/qc_pipeline/.snakemake/log/2018-05-22T142605.622034.snakemake.log

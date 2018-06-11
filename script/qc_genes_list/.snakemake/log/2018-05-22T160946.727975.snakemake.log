@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	human_globin_bed
+	2
+
+rule human_globin_bed:
+    input: /camp/stp/babs/working/bahn/code/project/qc_pipeline/txt/human_globin_ids.txt
+    output: /camp/stp/babs/working/bahn/code/project/qc_pipeline/bed/human_globin.bed
+    jobid: 2
+
+Finished job 2.
+1 of 2 steps (50%) done
+
+localrule all:
+    input: /camp/stp/babs/working/bahn/code/project/qc_pipeline/txt/human_globin_ids.txt, /camp/stp/babs/working/bahn/code/project/qc_pipeline/txt/human_rrna_ids.txt, /camp/stp/babs/working/bahn/code/project/qc_pipeline/txt/human_mtrrna_ids.txt, /camp/stp/babs/working/bahn/code/project/qc_pipeline/bed/human_globin.bed
+    jobid: 0
+
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /camp/stp/babs/working/bahn/code/project/qc_pipeline/.snakemake/log/2018-05-22T160946.727975.snakemake.log
