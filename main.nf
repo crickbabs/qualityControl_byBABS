@@ -1356,9 +1356,9 @@ process strandedness {
 		}
 }
 
-// get inferred strandedness from the file
-strandedness_variable.splitText().set{ strandedness_variable }
-INFERRED_STRANDEDNESS = strandedness_variable.collect().get().getAt(0)
+//// get inferred strandedness from the file
+//strandedness_variable.splitText().set{ strandedness_variable }
+//INFERRED_STRANDEDNESS = strandedness_variable.collect().get().getAt(0)
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -1540,7 +1540,6 @@ process rsem_star {
 		set val(sample), file("*.transcript.bam") into rsem_transcript
 		set val(sample), file("*.results") into rsem_results
 		set val(sample), file("*.stat") into rsem_stat
-		set val(sample), file("*[^STAR].genome.bam") into rsem_genome
 		set val(sample), file("*.STAR.genome.bam") \
 			into \
 				rsem_star_genome_sort,
@@ -2491,7 +2490,7 @@ process multiqc_conf {
 		h["Parametrised strandedness"] = STRANDEDNESS
 		h["Parametrised directory"] = DIRECTORY
 		h["Determined read length"] = READ_LENGTH
-		h["Inferred strandedness"] = INFERRED_STRANDEDNESS
+		//h["Inferred strandedness"] = INFERRED_STRANDEDNESS
 		h["GTF general annotation file"] = ANNOT_GTF_FILEPATH
 		h["FASTA genome sequence file"] = SEQ_FILEPATH
 		h["RSEM-STAR index files prefix"] = RSEM_STAR_INDICE_PREFIX_FILEPATH
