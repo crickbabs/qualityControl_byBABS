@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# nourdine.bah@crick.ac.uk
+
 from __future__ import print_function
 from collections import OrderedDict
 import logging

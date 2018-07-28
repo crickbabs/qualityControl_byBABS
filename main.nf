@@ -1,6 +1,7 @@
 #!/usr/bin/env nextflow
 
 /*
+ * harshil.patel@crick.ac.uk
  * nourdine.bah@crick.ac.uk
  * philip.east@crick.ac.uk
  */
