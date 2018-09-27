@@ -1,4 +1,10 @@
 
+/*
+ * nourdine.bah@crick.ac.uk
+ *
+ * This code computes the ratio forward/reverse reads for each transcripts.
+ */
+
 // c header
 #include <stdlib.h>
 #include <limits.h>
