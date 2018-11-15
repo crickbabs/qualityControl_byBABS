@@ -1301,7 +1301,7 @@ process strandedness {
 			# threshold
 			if rseqc_result < 30:
 				strandedness = "reverse"
-			if rseqc_result > 80:
+			else if rseqc_result > 80:
 				strandedness = "forward"
 			else:
 				strandedness = "none"
@@ -1350,7 +1350,7 @@ process strandedness {
 			# threshold
 			if rseqc_result < 30:
 				strandedness = "reverse"
-			if rseqc_result > 80:
+			else if rseqc_result > 80:
 				strandedness = "forward"
 			else:
 				strandedness = "none"
