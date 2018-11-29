@@ -822,7 +822,7 @@ process sampling {
 	module MODULE_SEQTK
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -974,7 +974,7 @@ process sampled_picard_group {
 	module MODULE_PICARD
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1024,7 +1024,7 @@ process sampled_picard_duplicate {
 	module MODULE_PICARD
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1075,7 +1075,7 @@ process sampled_picard_index {
 	module MODULE_SAMTOOLS
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1112,7 +1112,7 @@ process sampled_infer_experiment {
 	module MODULE_RSEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1154,7 +1154,7 @@ process sampled_rnaseqc {
 	module MODULE_RNASEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1641,7 +1641,7 @@ process picard_group {
 	module MODULE_PICARD
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1689,7 +1689,7 @@ process picard_duplicate {
 	module MODULE_PICARD
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1751,7 +1751,7 @@ process picard_index {
 	module MODULE_SAMTOOLS
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1791,7 +1791,7 @@ process picard_complexity {
 	module MODULE_PICARD
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1834,7 +1834,7 @@ process picard_rnaseqmetrics {
 	module MODULE_PICARD
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1881,7 +1881,7 @@ process picard_multimetrics {
 	module MODULE_R
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1934,7 +1934,7 @@ process stats {
 	module MODULE_SAMTOOLS
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -1967,7 +1967,7 @@ process idxstats {
 	module MODULE_SAMTOOLS
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2004,7 +2004,7 @@ process chromosome {
 	conda ANACONDA_ENV
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2044,7 +2044,7 @@ process infer_experiment {
 	module MODULE_RSEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2083,7 +2083,7 @@ process junction_annotation {
 	module MODULE_RSEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2122,7 +2122,7 @@ process junction_saturation {
 	module MODULE_RSEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2161,7 +2161,7 @@ process mismatch_profile {
 	module MODULE_RSEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2200,7 +2200,7 @@ process read_distribution {
 	module MODULE_RSEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2239,7 +2239,7 @@ process transcript_integrity {
 	module MODULE_RSEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2282,7 +2282,7 @@ process rnaseqc {
 	module MODULE_RNASEQC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2344,7 +2344,7 @@ process tss {
 	conda ANACONDA_ENV
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2390,7 +2390,7 @@ process qc_genes {
 	module MODULE_GCC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
@@ -2430,7 +2430,7 @@ process transcripts {
 	module MODULE_GCC
 
 	// HPC
-	cpus 32
+	cpus 1
 	executor "slurm"
 	memory "6000"
 
